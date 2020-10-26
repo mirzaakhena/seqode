@@ -1,0 +1,8 @@
+@startuml Initiate Order
+
+DELIVERY -> OMS: finding driver
+OMS -> MTHAPI: update deliveryStatus
+OMS <-- MTHAPI: 
+DELIVERY <-- OMS: 
+
+@enduml

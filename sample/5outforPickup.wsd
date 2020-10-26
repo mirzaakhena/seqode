@@ -1,0 +1,8 @@
+@startuml Initiate Order
+
+DELIVERY -> OMS: out for pickup
+OMS -> MTHAPI: update deliveryStatus
+OMS <-- MTHAPI: 
+DELIVERY <-- OMS: 
+
+@enduml

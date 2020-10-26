@@ -1,0 +1,8 @@
+@startuml Initiate Order
+
+PAYMENT -> OMS: Order Finish Notify 
+OMS -> MTHAPI: updateOrder
+OMS <-- MTHAPI: 
+PAYMENT <-- OMS: 
+
+@enduml

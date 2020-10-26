@@ -1,0 +1,6 @@
+@startuml Initiate Order
+
+OMS -> DELIVERY: booking delivery by attach orderID
+OMS <-- DELIVERY: 
+
+@enduml

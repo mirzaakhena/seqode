@@ -1,0 +1,15 @@
+@startuml Initiate Order
+
+participant APPS
+participant OMS
+participant MTHAPI
+participant PAYMENT
+
+APPS -> OMS: initiateOrder
+OMS -> MTHAPI: initiateOrder
+OMS <-- MTHAPI: 
+OMS -> PAYMENT: create order payment
+OMS <-- PAYMENT: 
+APPS <-- OMS: 
+
+@enduml

@@ -1,0 +1,15 @@
+@startuml SystemName
+
+participant FirstService
+participant SecondService
+participant ThirdService
+participant FourthService
+
+FirstService -> SecondService : Do Action A
+SecondService -> ThirdService : Do Action B
+SecondService -> FourthService : Do Action C
+FourthService --> SecondService : 
+SecondService --> FirstService : 
+ThirdService --> SecondService: 
+
+@enduml

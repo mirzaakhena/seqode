@@ -1,0 +1,19 @@
+@startuml The System Name
+
+participant FirstService
+participant SecondService
+participant ThirdService
+participant FourthService
+participant FifthService
+
+FirstService->SecondService:DoActionA
+
+SecondService->ThirdService:DoActionB
+ThirdService->FourthService:DoActionC
+ThirdService-->SecondService:returnB
+FourthService->FifthService:DoActionD
+FifthService-->FourthService:returnD
+FourthService-->ThirdService:returnC
+SecondService-->FirstService:returnA
+
+@enduml
